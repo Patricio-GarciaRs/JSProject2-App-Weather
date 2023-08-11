@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+body{
+    background-color: #1a1717;
+}
+#mainContainer{
+    background-color: #21D4FD;
+    background-image: linear-gradient(45deg, #21D4FD 0%, #B721FF 100%);
+    width: 30rem;
+    border-radius: 2em;
+}
+.search{
+    padding-left: 5rem;
+}
+input{
+    height: 3rem;
+    border-radius: 2em;
+    border: none;
+}
+.searchBx{
+    color: black;
+    text-align: center;
+}
+.error{
+    display: none;
+}

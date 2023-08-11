@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!----- BOOTSTRAP 5 CSS ----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="container" id="mainContainer">
+            <div class="search text-center mt-3">
+                <input class="searchBx" type="text" name="Enter city name" spellcheck="false">
+                <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass fa-3x" style="color: #ffffff;"></i>
+                </button>
+            </div>
+            <div class="error text-center">
+                <p>Invalid city name</p>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="assets/images/rain.png" class="weather-icon">
+                </div>
+                <div class="col-12 text-center" id="cityTemp">
+                    <h1 class="temp">22°C</h1>
+                    <h2 class="city">New York</h2>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="details">
+                    <div class="row text-center mt-3">
+                        <div class="col-6">
+                            <img src="assets/images/humidity.png">
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/images/wind.png">
+                            <div>
+                                <p class="wind">15 km/h</p>
+                                <p>Wind speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- BOOTSTRAP 5 JS ----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <!----- FONTAWESOME JS ----->
+    <script src="https://kit.fontawesome.com/f031c816cb.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
